@@ -1,17 +1,92 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="danger">
     <ion-title>
-      Tab 3
+      Desenhos
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content >
+ 
+  <ion-list>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+    <ion-item lines="full">
+      <ion-thumbnail slot="start">
+        <img src="assets/ursinhos.jpg">
+      </ion-thumbnail>
+      <ion-label routerLink="/ursinhos-carinhosos">
+        Ursinhos Carinhosos
+      </ion-label>
+
+      <div slot="end" class="c100 p90 small green">
+        <span>90%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+
+
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-thumbnail slot="start">
+        <img src="assets/winx.jpg">
+      </ion-thumbnail>
+      <ion-label routerLink="/winx">
+        Winx
+      </ion-label>
+
+      <div slot="end" class="c100 p65 small orange">
+        <span>65%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+
+
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-thumbnail slot="start">
+        <img src="assets/simpsons.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        Os Simpsons
+      </ion-label>
+
+      <div slot="end" class="c100 p35 small">
+        <span>35%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+
+
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-thumbnail slot="start">
+        <img src="assets/padrinhos.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        Padrinhos Mágicos
+      </ion-label>
+
+      <div slot="end" class="c100 p90 small green">
+        <span>90%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+
+
+    </ion-item>
+
+
+  </ion-list>
+
 </ion-content>
